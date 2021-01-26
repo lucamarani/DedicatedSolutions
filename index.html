@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"></link>
+
+    <title>Dedicated Solutions</title>
+  </head>
+  <body>
+
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid mx-6">
+          <a class="navbar-brand" href="#">Dedicated Solutions</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Supporto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-info me-2" type="button">Registrati</button>
+              <button class="btn btn-outline-secondary" type="button">Accedi</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container my-4">
+      <h1>Configurazione server dedicato</h1>
+      <div class="row gy-4 p-4">
+        <div class="col-sm-8">
+          <label for="cpuNo" class="form-label">No. CPU</label>
+          <input type="range" class="form-range" min="1" max="8" step="1" value="1" id="cpuNo">
+          <p id="cpuNoText">NaN</p>
+          <hr/>
+          <small class="text-muted" id="cpuCaption">Incluso</small>
+        </div>
+    	<div class="col-sm-8">
+          <label for="ramSize" class="form-label">Dimensioni RAM</label>
+          <input type="range" class="form-range" min="1" max="16" step="1" value="1" id="ramSize">
+          <p id="ramSizeText">NaN</p>
+          <hr/>
+          <small class="text-muted" id="ramCaption">Incluso</small>
+        </div>
+    	<div class="col-sm-8">
+          <label for="storageSize" class="form-label">Dimensioni storage</label>
+          <input type="range" class="form-range" min="50" max="500" step="10" value="50" id="storageSize">
+          <p id="storageSizeText">NaN</p>
+          <hr/>
+          <small class="text-muted" id="storageCaption">Incluso</small>
+        </div>
+    	<div class="col-sm-8">
+          <label for="ipNo" class="form-label">Indirizzi IP</label>
+          <input type="range" class="form-range" min="1" max="5" step="1" value="1" id="ipNo">
+          <p id="ipNoText">NaN</p>
+          <hr/>
+          <small class="text-muted" id="ipCaption">Incluso</small>
+        </div>
+    	<div class="col-sm-8">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="nas">
+            <label class="form-check-label" for="nas">
+              Servizio NAS
+            </label>
+          </div>
+          <hr/>
+          <small class="text-muted" id="nasCaption">Incluso</small>
+        </div>
+    	<div class="col-sm-8">
+          <p>Sistema Operativo</p>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="osRadio" id="osRadio1" checked>
+            <label class="form-check-label" for="osRadio1">
+              CentOS
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="osRadio" id="osRadio2">
+            <label class="form-check-label" for="osRadio2">
+              Windows 2016
+            </label>
+          </div>
+          <hr/>
+          <small class="text-muted" id="osCaption">Incluso</small>
+        </div>
+    	<div class="col-sm-6">
+          <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Configurazione attuale</div>
+            <div class="card-body">
+              <p class="card-text" id="add"></p>
+              <p class="card-text" id="addCpu"></p>
+              <p class="card-text" id="addRam"></p>
+              <p class="card-text" id="addStorage"></p>
+              <p class="card-text" id="addIp"></p>
+              <p class="card-text" id="addNas"></p>
+              <p class="card-text" id="addWindows"></p>
+              <hr/>
+              <h5 class="card-title" id="amount">NaN</h5>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Copyright WebServiceCompany</span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
