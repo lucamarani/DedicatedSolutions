@@ -1,4 +1,4 @@
-#Dedicated Solutions
+# Dedicated Solutions
 
 Dedicated server hosting service
 
